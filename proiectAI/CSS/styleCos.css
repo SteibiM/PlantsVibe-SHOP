@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    font-family: 'Redressed', cursive;  
+    box-sizing: border-box;
+ 
+}
+.overlay{
+    width: 100vw;
+    height: 100vh;
+   
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+
+.lista-tab{
+    position: relative;
+    background-color: #bfda69;
+    background-position: center;
+    width: 40%;
+    height: 90%;
+    margin: 0 auto;
+    top: 5%;
+    border-radius: 20px;
+    box-shadow: -5px -2px 17px #a7b96c;
+}
+.container{
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  
+    
+}
+.item-grid{
+ 
+     height: 100%;
+     overflow: auto;
+   
+}
+.item-grid {
+    border: 4px solid black;
+}
+.item-grid .titlu{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+    border-bottom: 5px dotted black;
+    
+}
+.item-grid .produse ul{
+    padding: 10px;
+    margin-top: 5px;
+}
+.item-grid .produse ul li{
+    position: relative;
+    border-bottom: 3px solid black;
+  
+    list-style: none;
+
+}
+.item-grid .produse ul li:hover{
+ background-color: rgba(255, 255, 255, 0.418);
+
+}
+
+.item-grid .produse ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+}
+.item-grid .produse ul li .element{
+    display:grid;
+    grid-template-columns: 85% 15%;
+    gap: 0;  
+
+}
+.item-grid .produse ul li .element-item{
+    height: 100px;
+    width: 100%;
+}
+.item-grid .produse ul li .element-item img{
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    
+}
+
+.element-item .input_box{
+    display: inline-flex;
+}
+
+
+.input_box input,.input_box a,.input_box .cost-final{
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+.input_box .input__b{
+    width: 40px;
+    height: 40px;
+    background-color: #aad41e;
+    border: none;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.input_box .input__t{
+    width: 60px;
+    height: 40px;
+    background-color: #ffffff;
+    border: none;
+    font-size: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+.cost-final{
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+}
+
+.adresa-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+    padding: 20px;
+   
+}
+.adresa-item{
+
+   width: 100%;
+   height: 100%;
+   font-size: 20px;
+  margin-top: 10px;
+}
+.adresa-item input[type=text],.adresa-item select,.adresa-item input[type=email],.adresa-item input[type=tel]  {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+.adresa-item .mplada,.adresa-item .mtransport{
+    width: 100%; 
+    font-size: 20px;
+}
+.adresa-item .mplada label,.adresa-item .mtransport label{
+ margin-left: 5px;
+}
+
+.adresa-contacte{
+    position: relative;
+    margin-top: -20px;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    padding: 15px;
+   
+}
+ .adresa-contacte textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    
+}
+.poza-stanga-sus{
+    position:absolute;
+    width: 50%;
+    height: 40%;
+   
+}
+.poza-stanga-sus img{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    border: 3px solid springgreen;
+    margin: 30px;
+    background-color:rgba(0, 255, 128, 0.062) ;
+    border-radius: 40px;
+}
+.poza-stanga-jos{
+    position:absolute;
+    bottom: 0;
+    margin-bottom: 60px;
+    width: 50%;
+    height: 40%;
+   
+}
+.poza-stanga-jos img{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    border: 3px solid springgreen;
+    margin: 30px;
+    background-color:rgba(0, 255, 128, 0.062) ;
+    border-radius: 40px;
+}
+.place-the-command{
+    position:absolute;
+    right: 0;
+    width: 15%;
+    height: 30%;
+    margin-right: 100px;
+    top: 35%;
+    background-color:springgreen; 
+    border-radius: 1000%;
+}
+.place-the-command a{
+    position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   text-decoration: none;
+   font-size: 45px;
+   color: #fff;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  top: 25%;
+
+}
+.place-the-command:hover {
+    background-color: white;
+   
+}
+.place-the-command a:hover{
+    color: springgreen; ;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    border: 2px solid rgb(25, 25, 29);
+    /* The box-shadow CSS property adds shadow effects around an element's frame. */
+    /*  box shadow is described by X and Y offsets relative to the element, blur and spread radius, and color. */
+    /* inset pune toate umbrele din exterior chiar si cele trasnparent in interior */
+    box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(45deg,#1f7792,rgb(67, 56, 107));
+    border-radius: 10px;
+}

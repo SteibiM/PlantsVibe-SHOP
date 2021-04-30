@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+}
+.item1{
+    grid-area: header;
+    min-height: 120px;
+    max-height: 150px;
+    font-family: 'Redressed', cursive;
+    border-bottom: 6.7px solid rgb(26, 92, 13);
+}
+.item2{
+    grid-area: contacte;
+    font-family: 'Redressed', cursive;
+    font-size: 20px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    'header header header header header '
+    'contacte contacte contacte contacte contacte '
+    'contacte contacte contacte contacte contacte '
+    'contacte contacte contacte contacte contacte '
+    ;
+    grid-gap: 10px;
+    max-height: 100vh;    
+}
+h2{
+    position: relative;
+    top: 20%;
+    margin-bottom: -15px;
+    text-align: center;
+    font-size: 35px;
+}
+.item2{
+    background-color: rgb(255, 255, 255);
+    padding: 20px 0;
+    height: 0%;
+ 
+}
+
+.logo{
+    position: absolute;   
+    min-width: 10vw;
+    max-width: 80vw;
+    min-height: 60px;
+    max-height: 120px;
+    transform: translate(20px,0px);
+   
+  
+  }
+  .item1{
+    background-color: #bfda69;
+    padding: 10px 0;
+  }
+  .footer p{
+    position: fixed;
+    bottom: 0;
+    margin-left: 45%;
+}
+
+.item2 ul li{
+    list-style: none;
+    
+}
+fieldset{
+    width: 600px;
+    border: 10px dotted rgb(85, 92, 82);
+    font-size: 25px;
+}
+
+legend{
+    font-size: 33px;
+    margin-left: 11px;
+}
+.item2 ul li input[type=text],.item2 ul li input[type=email]{
+    width: 100%;
+    padding: 7px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    font-size: 20px;
+    
+ 
+    
+}
+.item2 ul li textarea{
+    resize: none;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-radius: 15px;
+  
+}
+.item2 ul li input[type=submit]{
+    
+    width: 20%;
+    height: 40px;
+    font-size: 25px;
+    border-radius: 15px;
+    font-family: 'Redressed', cursive;
+  background-color: #bfda69;
+  color: white;
+  border: none;
+}
+.item2 ul li input[type=submit]:hover{
+  background-color: rgb(81, 104, 75);
+  color: #bfda69;
+ 
+}
